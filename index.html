@@ -387,6 +387,73 @@
             z-index: -1;
         }
         
+        /* Local pride section */
+        .local-pride {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .local-pride h3 {
+            color: var(--black);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+        
+        .local-pride h3 span {
+            font-size: 2rem;
+        }
+        
+        .local-images {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .local-item {
+            text-align: center;
+        }
+        
+        .local-item img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+        }
+        
+        .local-item p {
+            color: var(--black);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .pretzel-icon {
+            font-size: 4rem;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .footer-local {
+            background: var(--primary);
+            color: var(--black);
+            text-align: center;
+            padding: 15px 0;
+            font-weight: 600;
+        }
+        
+        .footer-local span {
+            font-size: 1.2rem;
+            margin: 0 5px;
+        }
+        
         .about-content h2 {
             color: var(--black);
             font-size: 2.5rem;
@@ -684,7 +751,7 @@
                 <div class="logo-icon">⚡</div>
                 <div class="logo-text">
                     <h1>Elektro Schwab</h1>
-                    <span>Ihr Elektriker in Speyer</span>
+                    <span>Ihr Elektriker in Speyer & der Pfalz 🥨</span>
                 </div>
             </div>
             <nav>
@@ -766,9 +833,9 @@
                     <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&h=600&fit=crop" alt="Elektro Schwab Team">
                 </div>
                 <div class="about-content">
-                    <h2>Elektro <span>Schwab</span></h2>
-                    <p>Seit über 20 Jahren sind wir Ihr verlässlicher Partner für alle elektrischen Anlagen in Speyer und der Region. Unser qualifiziertes Team aus Elektrikern und Elektromeistern steht für höchste Qualität und Kundenzufriedenheit.</p>
-                    <p>Von der privaten Wohnung bis zum großen Gewerbeobjekt – wir realisieren Projekte jeden Umfangs mit Fachwissen, Engagement und einem hohen Maß an Flexibilität.</p>
+                    <h2>Elektro <span>Schwab</span> 🥨</h2>
+                    <p>Seit über 20 Jahren sind wir Ihr verlässlicher Partner für alle elektrischen Anlagen in Speyer und der Pfalz. Unser qualifiziertes Team aus Elektrikern und Elektromeistern steht für höchste Qualität und Kundenzufriedenheit.</p>
+                    <p>Von der privaten Wohnung am Dom bis zum Gewerbeobjekt in der Industriezone – wir kennen Speyer und die Pfalz. Wir realisieren Projekte jeden Umfangs mit Fachwissen, Engagement und einem hohen Maß an Flexibilität.</p>
                     <div class="features">
                         <div class="feature">
                             <span>✓</span>
@@ -788,6 +855,21 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Pride Section -->
+    <section class="local-pride">
+        <h3><span>🏰</span> Ihr Elektriker aus Speyer <span>🥨</span></h3>
+        <div class="local-images">
+            <div class="local-item">
+                <img src="https://images.unsplash.com/photo-1595841055906-bd1b5ce2f091?w=400&h=300&fit=crop" alt="Speyer Dom">
+                <p>Speyer Dom - UNESCO Weltkulturerbe</p>
+            </div>
+            <div class="local-item">
+                <div class="pretzel-icon">🥨</div>
+                <p>Pfälzer Brezel - Unsere Heimat</p>
             </div>
         </div>
     </section>
@@ -912,6 +994,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Local Footer Badge -->
+    <div class="footer-local">
+        🥨 Ihr Spezialist in Speyer & der Pfalz 🏰
+    </div>
 
 </body>
 </html>
